@@ -24,7 +24,7 @@
         <!--Contact List View Controler-->
         <scene sceneID="0NM-94-375">
             <objects>
-                <viewController title="Contact List View Controler" id="77c-Eg-2Qu" sceneMemberID="viewController">
+                <viewController title="Contact List View Controler" id="77c-Eg-2Qu" customClass="ContactListViewController" customModule="Contact_Lesson" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v2h-Kd-RZg"/>
                         <viewControllerLayoutGuide type="bottom" id="Yyh-nJ-ZxO"/>
@@ -39,10 +39,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U4x-57-z63">
+                                <rect key="frame" x="37" y="178" width="412" height="344"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BxL-8p-vPJ" id="WUV-lI-xpZ"/>
+                                    <outlet property="delegate" destination="BxL-8p-vPJ" id="SYD-4H-p4M"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ONg-QX-guI"/>
+                    <connections>
+                        <outlet property="tableView" destination="U4x-57-z63" id="T9G-da-dHJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhs-0r-A41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "75DBC6874F8D7985EE340A0BF9D3B99EBC0861A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "75DBC6874F8D7985EE340A0BF9D3B99EBC0861A6" : 0,
+    "7D6B0C751E7B0E952BA9C351E377F199F44A9C64" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7D8010AF-6D09-4CC0-A745-474E231A6DC5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "75DBC6874F8D7985EE340A0BF9D3B99EBC0861A6" : "Contact%20Lesson\/",
+    "7D6B0C751E7B0E952BA9C351E377F199F44A9C64" : "..\/..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Contact Lesson",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Contact Lesson.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sikB\/Contact-Lesson.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "75DBC6874F8D7985EE340A0BF9D3B99EBC0861A6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sikB\/iOS-classes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7D6B0C751E7B0E952BA9C351E377F199F44A9C64"
+    }
+  ]
+}
