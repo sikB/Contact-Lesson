@@ -14,6 +14,7 @@
 		4328A4681C924C4200E58C93 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328A4671C924C4200E58C93 /* Contact.swift */; };
 		4328A46A1C924CBA00E58C93 /* Data Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328A4691C924CBA00E58C93 /* Data Manager.swift */; };
 		4328A46E1C9255CD00E58C93 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328A46D1C9255CD00E58C93 /* ContactListViewController.swift */; };
+		43F1F9711C98D25300E8B2CD /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F1F9701C98D25300E8B2CD /* ContactDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4328A4671C924C4200E58C93 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		4328A4691C924CBA00E58C93 /* Data Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Manager.swift"; sourceTree = "<group>"; };
 		4328A46D1C9255CD00E58C93 /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		43F1F9701C98D25300E8B2CD /* ContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			children = (
 				4328A46D1C9255CD00E58C93 /* ContactListViewController.swift */,
 				4328A4651C924B3E00E58C93 /* Storyboard.storyboard */,
+				43F1F9701C98D25300E8B2CD /* ContactDetailViewController.swift */,
 				4328A4671C924C4200E58C93 /* Contact.swift */,
 				4328A4691C924CBA00E58C93 /* Data Manager.swift */,
 				4328A4521C9245A300E58C93 /* Contact Lesson */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4328A46A1C924CBA00E58C93 /* Data Manager.swift in Sources */,
+				43F1F9711C98D25300E8B2CD /* ContactDetailViewController.swift in Sources */,
 				4328A46E1C9255CD00E58C93 /* ContactListViewController.swift in Sources */,
 				4328A4681C924C4200E58C93 /* Contact.swift in Sources */,
 				4328A4541C9245A300E58C93 /* AppDelegate.swift in Sources */,

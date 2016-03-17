@@ -18,6 +18,7 @@ class ContactListViewController: UIViewController, UITableViewDataSource, UITabl
         super.viewDidLoad()
         
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         
         self.contacts = DataManager.sharedManager.loadContacts()
         
@@ -31,6 +32,7 @@ class ContactListViewController: UIViewController, UITableViewDataSource, UITabl
     
     
     func tableView(tableView: UITableView,
+        
         numberOfRowsInSection section: Int) ->Int{
             
             return (self.contacts?.count)!
@@ -38,6 +40,7 @@ class ContactListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(tableView: UITableView,
+        
         cellForRowAtIndexPath indexPath: NSIndexPath) ->
         UITableViewCell{
             
@@ -49,6 +52,25 @@ class ContactListViewController: UIViewController, UITableViewDataSource, UITabl
             cell.textLabel?.text = "\(contact.firstName!)\(contact.lastName!) - \(indexPath.row)"
             
             return cell
+    }
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("ContactDetailsSegue", sender: self)
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ContactDetailsSegue"
+        {
+            if let selectedCell = self.tableView.indexPathForSelectedRow{
+                let selectedContact = self.contacts![ selectedCell.row]
+                
+                if let detailVC = segue.destinationViewController as? ContactDetailViewController
+                {
+                    detailVC.selectedContact = selectedContact
+                }
+                
+            }
+        }
+    
     }
 }
 
