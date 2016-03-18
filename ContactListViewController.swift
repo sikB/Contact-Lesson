@@ -12,7 +12,7 @@ class ContactListViewController: UIViewController, UITableViewDataSource, UITabl
     
     var contacts : [Contact]?
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

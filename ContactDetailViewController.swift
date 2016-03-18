@@ -32,7 +32,7 @@ class ContactDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.firstNameTF.text = self.selectedContact.firstName
+//        self.firstNameTF.text = self.selectedContact.firstName
 
         // Do any additional setup after loading the view.
     }
