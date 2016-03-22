@@ -5,7 +5,7 @@
 //  Created by Bogdan Sikhovski on 3/17/16.
 //  Copyright © 2016 Sik Marketing. All rights reserved.
 //
-
+import Foundation
 struct WebServiceManager{
 
     func fetchContacts(callback : ([Contact])-> Void){
@@ -25,7 +25,9 @@ struct WebServiceManager{
                 
             var contactList = [Contact]()
             let jsonArray : [ [String : AnyObject]] = NSJSONSerialization.JSONObjectWithData
-            (data!, options: NSJSONReadingOptions.AllowFragments)
+                (data!, options: NSJSONReadingOptions.AllowFragments) as? [[String:AnyObject]]{
+                    
+                }
         }
         task.resume()
     }
