@@ -72,7 +72,23 @@ class ContactListViewController: UIViewController, UITableViewDataSource, UITabl
         }
     
     }
+
+    @IBAction func buttonTapped(sender: AnyObject) {
+        print("calling fetch contacts")
+        let webService = WebServiceManager()
+        webService.fetchContacts{(newContacts)-> Void in
+        //code goes here
+//        print("calling fetch contacts")
+            
+
+        
+        }
+    }
+
+
 }
+
+
 
 
 
